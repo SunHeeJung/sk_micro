@@ -1,0 +1,51 @@
+@charset "euc-kr";
+/************* 기본세팅 *************/
+
+* {margin:0; padding:0; list-style:none}
+fieldset {border:none; position:relative}
+legend {display:none}
+img {border:none}
+
+.border {border:1px solid #000}
+#micro {width:1026px; height:768px; margin:0 auto; position:relative}
+#wrapper {position:relative; width:906px; height:768px; float:left}
+#wrapper span {float:left}
+#wrapper #pop0 {position:absolute; top:106px; left:45px; z-index:100}
+#wrapper #pop1 {position:absolute; top:49px; left:729px; z-index:101}
+#wrapper #pop2 {position:absolute; top:161px; left:553px; z-index:102; cursor:pointer}
+#wrapper .gal {position:absolute; top:147px; left:108px; opacity:0; filter:alpha(opacity=0)}
+#wrapper .mgal {position:absolute; top:123px; left:560px; opacity:0; filter:alpha(opacity=0)}
+#pop3 {position:absolute; z-index:102; opacity:0; filter:alpha(opacity=0); display:none}
+#pop3 .popImg {position:absolute; top:50px; left:110px; z-index:1000}
+#pop3 .back {background:#000; opacity:0.5; filter:alpha(opacity=50); width:1024px; height:768px}
+#pop3 #btnClose {width:50px; height:50px; position:absolute; top:50px; left:860px; cursor:pointer; z-index:1100; border:none; background:none}
+#btnPop3 {cursor:pointer}
+
+
+#wrapper .keeper {position:absolute; top:168px; left:133px; opacity:0; filter:alpha(opacity=0)}
+#wrapper .btnKeeper {position:absolute; width:185px; height:185px; opacity:0; filter:alpha(opacity=0); border:1px solid #000; background:#000; cursor:pointer}
+#wrapper #btnKeeper0 {top:170px; left:396px}
+#wrapper #btnKeeper1 {top:170px; left:583px}
+#wrapper #btnKeeper2 {top:353px; left:396px}
+#wrapper #btnKeeper3 {top:353px; left:583px}
+
+#nav {width:119px; float:left; background:#625047; height:768px}
+#nav dt h1 {padding:14px 0 40px 33px}
+#nav dt {}
+#nav dd {}
+#nav dd ul {display:none}
+#nav dd.selected ul {display:block}
+#nav dd li {line-height:0}
+#nav h2 {}
+#nav ul.banner {position:absolute; bottom:24px; left:7px}
+#nav ul.banner li {line-height:0}
+
+
+
+
+
+
+
+
+
+

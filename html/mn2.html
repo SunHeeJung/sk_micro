@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=880" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(window).ready(function(){
+	$("#pop2").click(function(){
+		$("#img9").animate({
+			opacity:1
+		}, 1000).click(function(){
+			$("#img9").animate({opacity:0}, 1000, function(){
+				$("#img9").css("display", "none")
+			})
+		});
+		$("#pop2").animate({opacity:0}, 1000, function(){
+			$("#pop2").css("display", "none")
+		})
+	});
+	var idx = 0;
+	$("#img0").css("opacity", "1")
+	setInterval(function(){
+		$("#img"+idx).animate({opacity:0}, 500, function(){$("#img"+idx).animate({opacity:1}, 500)})
+		if(idx == 8){
+			idx = 0
+		}else{
+			idx++
+		}
+		
+		
+	}, 3000)
+})
+</script>
+</head>
+
+<body>
+<div id="micro">
+	<div id="nav">
+		<dl>
+			<dt><h1 id="btnLogo"><img src="../images/h1_logo.jpg" alt="logo"></h1></dt>
+			<dd class="selected">
+				<h2><a href="mn1.html"><img src="../images/nav0_sel.jpg" alt="SRS 종목검색" /></a></h2>
+				<ul>
+					<li><a href="mn1.html"><img src="../images/nav0_sub0.jpg" alt="SRS란?" /></a></li>
+					<li><a href="mn2.html"><img src="../images/nav0_sub1_ov.jpg" alt="SRS이용방법" /></a></li>
+				</ul>
+			</dd>
+			<dd class="">
+				<h2><a href="mn4.html"><img src="../images/nav1.jpg" alt="SK퀸트/SAY" /></a></h2>
+				<ul>
+					<li><a href="mn4.html"><img src="../images/nav1_sub0.jpg" alt="퀸트" /></a></li>
+					<li><a href="mn5.html"><img src="../images/nav1_sub1.jpg" alt="SAY" /></a></li>
+				</ul>
+			</dd>
+			<dd><h2><a href="mn6.html"><img src="../images/nav2.jpg" alt="특화주문" /></a></h2></dd>
+			<dd><h2><a href="mn7.html"><img src="../images/nav3.jpg" alt="파수꾼 기능" /></a></h2></dd>
+			<dd><h2><a href="mn8.html"><img src="../images/nav4.jpg" alt="매니져 연결" /></a></h2></dd>
+		</dl>
+		<ul class="banner">
+			<li><a href="#"><img src="../images/bnnr0.jpg" alt="" /></a></li>
+			<li><a href="#"><img src="../images/bnnr1.jpg" alt="" /></a></li>
+			<li><a href="#"><img src="../images/bnnr2.jpg" alt="" /></a></li>
+		</ul>
+	</div>
+	
+	<div id="wrapper">
+		<div id="pop0"><img src="../images/pop_0.png"></div>
+		<div id="pop1"><img src="../images/pop_1.png"></div>
+		<div id="pop2"><img src="../images/pop_2.png"></div>
+		<div id="img0" class="gal"><img src="../images/01_01.jpg"></div>
+		<div id="img1" class="gal"><img src="../images/01_02.jpg"></div>
+		<div id="img2" class="gal"><img src="../images/01_03.jpg"></div>
+		<div id="img3" class="gal"><img src="../images/02_01.jpg"></div>
+		<div id="img4" class="gal"><img src="../images/02_02.jpg"></div>
+		<div id="img5" class="gal"><img src="../images/02_03.jpg"></div>
+		<div id="img6" class="gal"><img src="../images/03_01.jpg"></div>
+		<div id="img7" class="gal"><img src="../images/03_02.jpg"></div>
+		<div id="img8" class="gal"><img src="../images/03_03.jpg"></div>
+		<div id="img9" class="mgal"><img src="../images/04.png"></div>
+		
+		<span><img src="../images/img_9_0.jpg" alt=""/></span>
+		<span><img src="../images/img_9_1.jpg" alt=""/></span>
+		<span><img src="../images/img_9_2.jpg" alt=""/></span>
+		<span><a href="mn9.html"><img src="../images/img_9_3.jpg" alt=""/></a></span>
+		<span><a href="mn10.html"><img src="../images/img_9_4.jpg" alt=""/></a></span>
+	</div>
+</div>
+</body>
+</html>
