@@ -14,10 +14,13 @@
 
 $(window).ready(function(){
 	var cuImg = 0;
+	$("#img"+cuImg).css("opacity", "1")
 	for(var i=0; i<4; i++){
 		$("#btnKeeper"+i).click(function(e){
+			$("#btnKeeper"+cuImg).css("backgroundPositionX", "1000px")
 			$("#img"+cuImg).animate({opacity:0}, 100)
 			cuImg = e.target.id.substr(9);
+			$("#btnKeeper"+cuImg).css("backgroundPositionX", "0")
 			$("#img"+cuImg).animate({opacity:1}, 100)
 		})
 	}

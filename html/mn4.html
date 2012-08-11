@@ -8,10 +8,20 @@
 <meta name="viewport" content="width=880" />
 <title></title>
 <link rel="stylesheet" type="text/css" href="../css/style.css"/>
-<style typee="text/css">
-
-</style>
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript">
+var idx = 0
+$(window).ready(function(){
+	for(var i=0; i<6; i++){
+		$("#btnSample"+i).click(function(e){
+			$("#sample"+idx).css("display", "none")
+			idx = e.target.id.substr(9)
+			$("#sample"+idx).css("display", "block")
+		})
+	}
+})
+</script>
 </head>
 
 <body>
@@ -47,7 +57,25 @@
 	<div id="wrapper">
 		<span><img src="../images/img_1_0.jpg" alt=""/></span>
 		<span><img src="../images/img_1_1.jpg" alt=""/></span>
-		<span><img src="../images/img_1_2.jpg" alt=""/></span>
+		<span>
+			<ul class="btnSample">
+				<li id="btnSample0"></li>
+				<li id="btnSample1"></li>
+				<li id="btnSample2"></li>
+				<li id="btnSample3"></li>
+				<li id="btnSample4"></li>
+				<li id="btnSample5"></li>
+			</ul>
+			<div class="sample">
+				<div id="sample0"><img src="../images/img_1_2a.png" alt=""></div>
+				<div id="sample1"><img src="../images/img_1_2b.png" alt=""></div>
+				<div id="sample2"><img src="../images/img_1_2c.png" alt=""></div>
+				<div id="sample3"><img src="../images/img_1_2d.png" alt=""></div>
+				<div id="sample4"><img src="../images/img_1_2e.png" alt=""></div>
+				<div id="sample5"><img src="../images/img_1_2f.png" alt=""></div>
+			</div>
+			<img src="../images/img_1_2.jpg" alt=""/>
+		</span>
 		<span><a href="mn9.html"><img src="../images/img_1_3.jpg" alt=""/></a></span>
 		<span><a href="mn10.html"><img src="../images/img_1_4.jpg" alt=""/></a></span>
 	</div>
