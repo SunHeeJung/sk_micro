@@ -13,17 +13,13 @@
 <script type="text/javascript">
 $(window).ready(function(){
 	$("#pop2").click(function(){
-		$("#img9").animate({
-			opacity:1
-		}, 1000).click(function(){
-			$("#img9").animate({opacity:0}, 1000, function(){
-				$("#img9").css("display", "none")
-			})
-		});
-		$("#pop2").animate({opacity:0}, 1000, function(){
-			$("#pop2").css("display", "none")
-		})
+		$("#img9").css("display", "block")
+		$("#pop2").css("display", "none")
 	});
+	$("#img9").click(function(){
+		$("#img9").css("display", "none")
+		$("#pop2").css("display", "block")
+	})
 	var idx = 0;
 	$("#img0").css("opacity", "1")
 	setInterval(function(){

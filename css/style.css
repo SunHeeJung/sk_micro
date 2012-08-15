@@ -13,17 +13,17 @@ img {border:none}
 #wrapper #pop0 {position:absolute; top:106px; left:45px; z-index:100}
 #wrapper #pop1 {position:absolute; top:49px; left:729px; z-index:101}
 #wrapper #pop2 {position:absolute; top:161px; left:553px; z-index:102; cursor:pointer}
-#wrapper .gal {position:absolute; top:147px; left:108px; opacity:0; filter:alpha(opacity=0)}
-#wrapper .mgal {position:absolute; top:123px; left:560px; opacity:0; filter:alpha(opacity=0)}
+#wrapper .gal {position:absolute; top:147px; left:108px; opacity:0; filter:alpha(opacity=0); z-index:99}
+#wrapper .mgal {position:absolute; top:123px; left:560px; display:none; z-index:99; cursor:pointer}
 #wrapper .sample {position:absolute; top:20px; left:149px}
 #wrapper .sample div {display:none}
 #wrapper .sample #sample0 {display:block}
 #wrapper .btnSample {position:absolute; top:80px; left:149px; z-index:1000}
-#wrapper .btnSample li {width:100px; height:17px; cursor:pointer}
+#wrapper .btnSample li {width:100px; height:17px; cursor:pointer; border:1px solid #000; background:#fff; opacity:0; filter:alpha(opacity=0)}
 #pop3 {position:absolute; z-index:102; opacity:0; filter:alpha(opacity=0); display:none}
 #pop3 .popImg {position:absolute; top:50px; left:110px; z-index:1000}
 #pop3 .back {background:#000; opacity:0.5; filter:alpha(opacity=50); width:1024px; height:768px}
-#pop3 #btnClose {width:50px; height:50px; position:absolute; top:50px; left:860px; cursor:pointer; z-index:1100; border:none; background:none}
+#pop3 #btnClose {width:50px; height:50px; position:absolute; top:50px; left:860px; cursor:pointer; z-index:1100; border:none; background:#fff; opacity:0; filter:alpha(opacity=0)}
 #btnPop3 {cursor:pointer}
 
 
